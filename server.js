@@ -11,7 +11,7 @@ const friends = [
   },
   {
     id: 1,
-    name: "Aldooooo",
+    name: "AldoooooO",
   },
 ];
 
@@ -19,7 +19,6 @@ app.get("/friends", (req, res) => {
   res.json(friends);
 });
 
-// GET /friends/22
 app.get("/friends/:friendId", (req, res) => {
   const friendId = Number(req.params.friendId);
   const friend = friends[friendId];
